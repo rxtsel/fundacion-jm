@@ -1,6 +1,6 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props as Props;
@@ -8,42 +8,27 @@ const { title } = Astro.props as Props;
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href="16x16.svg" sizes="16x16"/>
-    <link rel="icon" type="image/svg+xml" href="32x32.svg" sizes="32x32"/>
-    <link rel="icon" type="image/svg+xml" href="96x96.svg" sizes="96x96"/>
-    <link rel="apple-touch-icon" type="image/svg+xml" href="180x180.svg" sizes="180x180" >
-		<title>{title}</title>
-		<meta name="keywords" content="Cristhian Melo, rxtsel"/>
-		<meta name="author" content="Cristhian Melo" />
-		<meta name="copyright" content="Cristhian Melo" />
-		<!-- Primary Meta Tags -->
-		<meta name="title" content="Cristhian Melo | Desarrollador de Software">
-		<meta name="description"
-			content="Pagína web donde encontrarás informacíon sobre mí y algunos de los proyectos en los que he trabajado.">
-
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://rxtsel.ml/">
-		<meta property="og:title" content="Cristhian Melo | Desarrollador de Software">
-		<meta property="og:description"
-			content="Pagína web donde encontrarás informacíon sobre mí y algunos de los proyectos en los que he trabajado.">
-		<meta property="og:image"
-			content="meta_tags_large_icon.png">
-
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image">
-		<meta property="twitter:url" content="https://rxtsel.ml/">
-		<meta property="twitter:title" content="Cristhian Melo | Desarrollador de Software">
-		<meta property="twitter:description"
-			content="Pagína web donde encontrarás informacíon sobre mí y algunos de los proyectos en los que he trabajado.">
-		<meta property="twitter:image"
-			content="meta_tags_large_icon.png">
-	</head>
-	<body class="bg-[#1A1A1A]">
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/png" />
+    <title>{title}</title>
+    <meta
+      name="keywords"
+      content="Fundacion jm, fundacion mocoa, fundaciones en mocoa putumayo"
+    />
+    <meta name="author" content="Cristhian Melo (rxtsel.dev)" />
+    <meta name="copyright" content="Fundacion Para El Desarrollo Social JM" />
+    <!-- Primary Meta Tags -->
+    <meta
+      name="title"
+      content="Fundacion Para El Desarrollo Social JM - Fundacion Mocoa"
+    />
+    <meta name="description" content="Fundacion en mocoa putumayo" />
+  </head>
+  <body class="bg-[#1A1A1A]">
+    <slot />
+  </body>
 </html>
