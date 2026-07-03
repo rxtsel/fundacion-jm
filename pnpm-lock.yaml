@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/dm-sans':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource-variable/outfit':
+        specifier: ^5.2.8
+        version: 5.2.8
       '@tailwindcss/vite':
         specifier: 4.3.2
         version: 4.3.2(vite@8.1.2(esbuild@0.28.1)(jiti@2.7.0))
@@ -357,6 +363,12 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/dm-sans@5.2.8':
+    resolution: {integrity: sha512-AxkvMTvNWgfrmlyjiV05vlHYJa+nRQCf1EfvIrQAPBpFJW0O9VTz7oAFr9S3lvbWdmnFoBk7yFqQL86u64nl2g==}
+
+  '@fontsource-variable/outfit@5.2.8':
+    resolution: {integrity: sha512-4oUDCZx/Tcz6HZP423w/niqEH31Gks5IsqHV2ZZz1qKHaVIZdj2f0/S1IK2n8jl6Xo0o3N+3RjNHlV9R73ozQA==}
 
   '@fsouza/prettierd@0.28.0':
     resolution: {integrity: sha512-XkRkIp2en2Lcm7Qc+zqNm8ClI3RArLCBNG2A4M2xzTw43S/vYSEDQ4NcfW+6ZsUyQeoVqrFcMU5H1yAKCVkv6A==}
@@ -1931,6 +1943,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.28.1':
     optional: true
+
+  '@fontsource-variable/dm-sans@5.2.8': {}
+
+  '@fontsource-variable/outfit@5.2.8': {}
 
   '@fsouza/prettierd@0.28.0(typescript@6.0.3)':
     dependencies:
