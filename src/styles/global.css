@@ -121,7 +121,7 @@
   }
 
   html {
-    @apply font-sans;
+    @apply scroll-smooth font-sans;
   }
 
   h1,
