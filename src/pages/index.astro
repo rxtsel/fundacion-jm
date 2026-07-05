@@ -1,20 +1,10 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-
-const text = "The quick brown fox jumps over the lazy dog.";
+import Hero from "@/components/Hero.astro";
 ---
 
 <Layout
   title="Fundacion Para El Desarrollo Social JM - Fundacion en Mocoa Putumayo"
 >
-  <div class="min-h-screen">
-    <p class="text-center text-2xl font-bold">{text}</p>>
-    <p class="text-center text-2xl font-bold">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi reiciendis
-      hic ratione, id eum ex vel cum numquam ab repellendus sunt inventore
-      maxime et, quia velit dolor quo sed nisi quam placeat nihil eaque neque
-      quaerat magnam! Accusamus alias labore tenetur cum porro dolorum at
-      delectus amet, distinctio voluptatum dolores!
-    </p>
-  </div>
+  <Hero />
 </Layout>

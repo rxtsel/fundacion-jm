@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+---
+
+<div class="pointer-events-none absolute inset-0 z-0 overflow-x-hidden">
+  <div
+    class="absolute top-0 left-[50%] w-[1920px] translate-x-[-50%] sm:w-[2560px]"
+  >
+    <Image
+      alt="Imagen de fondo de la fundación, solo es lineas abstractas"
+      loading="eager"
+      width="2560"
+      height="1080"
+      decoding="async"
+      class="h-full w-full object-cover opacity-60 select-none"
+      srcset="/hero-bg.webp"
+      src="/hero-bg.webp"
+      style="color: transparent;"
+    />
+  </div>
+</div>

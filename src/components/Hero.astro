@@ -1,0 +1,100 @@
+---
+import HandHeartIcon from "@/icons/hand-heart-stroke-rounded.svg";
+import HeartIcon from "@/icons/heart.svg";
+import ArrowDownIcon from "@/icons/arrow-down-02-stroke-rounded.svg";
+import { buttonVariants } from "@/components/ui/Button.astro";
+import { Image } from "astro:assets";
+import Badge from "@/components/ui/Badge.astro";
+import HeroBackgroundImage from "./HeroBackgroundImage.astro";
+---
+
+<HeroBackgroundImage />
+
+<main class="container mx-auto grid grid-cols-1 gap-6 px-4 py-18 md:px-0">
+  <div class="flex flex-col gap-6">
+    <Badge
+      class="animate-fade-in-up animate-delay-100 mx-auto inline-flex"
+      size="lg"
+    >
+      <HandHeartIcon class="size-5" />
+      Mocoa, Putumayo, Colombia
+    </Badge>
+
+    <h1
+      class="text-fluid-3xl sm:text-fluid-4xl animate-fade-in-up animate-delay-200 text-center font-black text-balance"
+    >
+      Fundación Para El Desarrollo Social JM
+    </h1>
+    <p
+      class="text-fluid-base text-muted-foreground animate-fade-in-up animate-delay-300 text-center text-pretty"
+    >
+      Trabajamos junto a familias, niños, jóvenes y comunidades para impulsar
+      proyectos de desarrollo social, educación y bienenestar en Colombia.
+    </p>
+
+    <footer
+      class="animate-fade-in-up animate-delay-400 flex flex-col items-center justify-center gap-4 md:flex-row"
+    >
+      <a href="/donar" class={buttonVariants({ size: "lg" })}>
+        Donar Ahora
+        <HeartIcon />
+      </a>
+      <a
+        href="#proyectos"
+        class={buttonVariants({
+          variant: "outline",
+          size: "lg",
+        })}
+      >
+        Conocer Proyectos
+        <ArrowDownIcon class="-rotate-90" />
+      </a>
+    </footer>
+
+    <div
+      class="animate-fade-in-up animate-delay-500 flex items-center justify-center gap-2"
+    >
+      <div class="flex -space-x-2.5">
+        <Image
+          class="size-10 rounded-full border-3 border-white md:size-14"
+          src="https://randomuser.me/api/portraits/men/32.jpg"
+          alt="Profile picturo for Avatar 1"
+          width={40}
+          height={40}
+          loading="eager"
+        />
+        <Image
+          class="size-10 rounded-full border-3 border-white md:size-14"
+          src="https://randomuser.me/api/portraits/women/78.jpg"
+          alt="Profile picturo for Avatar 2"
+          width={40}
+          height={40}
+          loading="eager"
+        />
+        <Image
+          class="size-10 rounded-full border-3 border-white md:size-14"
+          src="https://randomuser.me/api/portraits/women/19.jpg"
+          alt="Profile picturo for Avatar 3"
+          width={40}
+          height={40}
+          loading="eager"
+        />
+      </div>
+      <p class="md:text-fluid-base text-muted-foreground text-xs sm:text-sm">
+        +850 personas ya hacen parte del cambio
+      </p>
+    </div>
+  </div>
+
+  <!-- Cover image -->
+  <div class="animate-fade-in-up animate-delay-600 mt-10">
+    <Image
+      class="border-border aspect-video w-full rounded-4xl border-4 object-cover shadow-lg"
+      src="https://www.mineducacion.gov.co/1759/articles-392463_recurso_2.jpg"
+      alt="Puede ser una imagen de unos niños estudiantes"
+      width={1920}
+      height={1080}
+      loading="eager"
+    />
+  </div>
+</main>
