@@ -33,7 +33,7 @@
   --card-foreground: oklch(0.153 0.006 107.1);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.153 0.006 107.1);
-  --primary: oklch(0.42 0.16 283); /* azul del logo */
+  --primary: oklch(0.42 0.16 283);
   --primary-foreground: white;
   --secondary: oklch(0.975 0.004 95);
   --secondary-foreground: oklch(0.21 0.006 285.885);
@@ -47,7 +47,7 @@
   --ring: var(--primary);
   --radius: 0.875rem;
 
-  /*  Brand */
+  /* Brand Colors */
   --color-brand-blue: #2b2b77;
   --color-brand-green: #5bd85b;
   --color-brand-pink: #f7415b;
