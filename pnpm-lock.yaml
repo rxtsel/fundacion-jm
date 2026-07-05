@@ -20,12 +20,12 @@ importers:
       astro:
         specifier: 7.0.6
         version: 7.0.6(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(jiti@2.7.0)
-      class-variance-authority:
-        specifier: 0.7.1
-        version: 0.7.1
       clsx:
         specifier: 2.1.1
         version: 2.1.1
+      cva:
+        specifier: 1.0.0-beta.4
+        version: 1.0.0-beta.4(typescript@6.0.3)
       tailwind-merge:
         specifier: 3.6.0
         version: 3.6.0
@@ -915,9 +915,6 @@ packages:
     resolution: {integrity: sha512-77PSwercCZU2Fc4sX94eF8k8Pxte6JAwL4/ICZLFjJLqegs7kCuAsqqj/70NQF6TvDpgFjkubQB2FW2ZZddvQg==}
     engines: {node: '>=8'}
 
-  class-variance-authority@0.7.1:
-    resolution: {integrity: sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==}
-
   clsx@2.1.1:
     resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
     engines: {node: '>=6'}
@@ -964,6 +961,14 @@ packages:
   csso@5.0.5:
     resolution: {integrity: sha512-0LrrStPOdJj+SPCCrGhzryycLjwcgUSHBtxNA8aIDxf0GLsRh1cKYhB00Gd1lDOS4yGH69+SNn13+TWbVHETFQ==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
+
+  cva@1.0.0-beta.4:
+    resolution: {integrity: sha512-F/JS9hScapq4DBVQXcK85l9U91M6ePeXoBMSp7vypzShoefUBxjQTo3g3935PUHgQd+IW77DjbPRIxugy4/GCQ==}
+    peerDependencies:
+      typescript: '>= 4.5.5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   debug@4.4.3:
     resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
@@ -2474,10 +2479,6 @@ snapshots:
 
   ci-info@4.4.0: {}
 
-  class-variance-authority@0.7.1:
-    dependencies:
-      clsx: 2.1.1
-
   clsx@2.1.1: {}
 
   comma-separated-tokens@2.0.3: {}
@@ -2521,6 +2522,12 @@ snapshots:
   csso@5.0.5:
     dependencies:
       css-tree: 2.2.1
+
+  cva@1.0.0-beta.4(typescript@6.0.3):
+    dependencies:
+      clsx: 2.1.1
+    optionalDependencies:
+      typescript: 6.0.3
 
   debug@4.4.3:
     dependencies:
