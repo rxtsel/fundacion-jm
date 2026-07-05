@@ -137,93 +137,17 @@
  * Typography
  * =========================================================================== */
 @utility text-fluid-4xl {
-  /* 56px → 112px */
-  font-size: clamp(3.5rem, 2rem + 5vw, 7rem);
-
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+  @apply text-[clamp(3.5rem,2rem+5vw,7rem)] leading-[1.05] font-bold tracking-[-0.02em];
 }
 
 @utility text-fluid-3xl {
-  /* 44px → 80px */
-  font-size: clamp(2.75rem, 1.8rem + 3.8vw, 5rem);
-
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.03em;
+  @apply text-[clamp(2.75rem,1.8rem+3.8vw,5rem)] leading-[1.1] font-bold tracking-[-0.03em];
 }
 
 @utility text-fluid-2xl {
-  /* 38px → 60px */
-  font-size: clamp(2.375rem, 1.8rem + 2.4vw, 3.75rem);
-
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.025em;
+  @apply text-[clamp(2.375rem,1.8rem+2.4vw,3.75rem)] leading-[1.1] font-bold tracking-tight;
 }
 
 @utility text-fluid-base {
-  /* 18px -> 20px */
-  font-size: clamp(1.125rem, 0.875rem + 0.5vw, 1.25rem);
-
-  line-height: 1.4;
-}
-
-/* ===========================================================================
- * Buttons
- * =========================================================================== */
-@utility btn {
-  @apply focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 inline-flex shrink-0 transform-gpu cursor-pointer items-center justify-center gap-2 rounded-full border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all duration-200 outline-none select-none hover:scale-105 focus-visible:ring-[3px] active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:ring-[3px] [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4;
-}
-
-/* Button sizes */
-@utility btn-xs {
-  @apply h-6 gap-1 px-2.5 text-xs has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 [&_svg:not([class*='size-'])]:size-3;
-}
-
-@utility btn-sm {
-  @apply h-8 gap-1 px-3 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2;
-}
-
-@utility btn-md {
-  @apply h-10 px-4 text-base has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5;
-}
-
-@utility btn-lg {
-  @apply h-16 px-8 text-xl has-data-[icon=inline-end]:pr-3 has-data-[icon=inline-start]:pl-3;
-}
-
-/* Button icon variants sizes */
-@utility btn-icon {
-  @apply size-9;
-}
-
-@utility btn-icon-xs {
-  @apply size-6 [&_svg:not([class*='size-'])]:size-3;
-}
-
-@utility btn-icon-sm {
-  @apply size-8;
-}
-
-@utility btn-icon-lg {
-  @apply size-16;
-}
-
-/* Button Variants */
-@utility btn-primary {
-  @apply bg-primary text-primary-foreground hover:bg-primary/80;
-}
-
-@utility btn-secondary {
-  @apply bg-secondary text-secondary-foreground hover:bg-secondary/80 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground;
-}
-
-@utility btn-outline {
-  @apply border-border bg-input/30 hover:bg-input/50 hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground;
-}
-
-@utility btn-ghost {
-  @apply hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50;
+  @apply text-[clamp(1.125rem,0.875rem+0.5vw,1.25rem)] leading-[1.4];
 }
