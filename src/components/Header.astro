@@ -1,27 +1,49 @@
 ---
 import HeartIcon from "@/icons/heart.svg";
+import LogoLarge from "@/icons/logo-large.svg";
+import LogoIsotype from "@/icons/logo-isotype.svg";
+import { buttonVariants } from "./ui/Button.astro";
+import { cn } from "@/lib/utils";
 ---
 
 <header
-  class="border-border bg-background/50 sticky top-0 z-50 flex w-full items-center justify-center border p-4 backdrop-blur-sm md:p-5"
+  class="lg:bg-background/50 bg-background/80 sticky top-0 z-50 flex w-full items-center justify-center p-2 shadow-xs backdrop-blur-sm"
 >
   <div class="container flex w-full items-center justify-between">
-    <a href="/" class="text-primary text-2xl font-bold">Fundación JM</a>
+    <a href="/" class="text-primary text-2xl font-bold">
+      <LogoLarge height={80} width="100%" class="hidden lg:inline-flex" />
+      <LogoIsotype height={80} width="100%" class="lg:hidden" />
+    </a>
 
     <nav class="flex items-center gap-2">
       <a
-        class="btn btn-md btn-ghost text-fluid-base hidden scale-none font-medium hover:scale-none lg:inline-flex"
+        class={cn(
+          buttonVariants({
+            variant: "ghost",
+            class: "text-lg hidden lg:inline-flex",
+          }),
+        )}
         href="#inicio">Inicio</a
       >
       <a
-        class="btn btn-md btn-ghost text-fluid-base hidden scale-none font-medium hover:scale-none lg:inline-flex"
+        class={cn(
+          buttonVariants({
+            variant: "ghost",
+            class: "text-lg hidden lg:inline-flex",
+          }),
+        )}
         href="#nosotros">Nosotros</a
       >
       <a
-        class="btn btn-md btn-ghost text-fluid-base hidden scale-none font-medium hover:scale-none lg:inline-flex"
+        class={cn(
+          buttonVariants({
+            variant: "ghost",
+            class: "text-lg hidden lg:inline-flex",
+          }),
+        )}
         href="#contacto">Contacto</a
       >
-      <a href="/donar" class="btn btn-primary btn-md text-fluid-base">
+      <a href="#" class={cn(buttonVariants({ class: "text-lg" }))}>
         Donar Ahora
         <HeartIcon />
       </a>
