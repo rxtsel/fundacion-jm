@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+import HeartIcon from "@/icons/heart.svg";
+import { buttonVariants } from "./ui/Button.astro";
+---
+
+<section
+  class="timeline-view animate-fade-in animate-range-[entry_10%_contain_30%] container mx-auto px-2 py-10 lg:py-36"
+>
+  <div class="relative">
+    <Image
+      src="/volunter1.jpg"
+      alt="Banner"
+      loading="lazy"
+      width={1920}
+      height={1080}
+      class="absolute inset-0 -z-1 aspect-video h-full w-full rounded-4xl object-cover object-center"
+    />
+
+    <div
+      class="absolute inset-0 -z-1 h-full w-full rounded-2xl bg-linear-to-b from-black/80 via-25% to-transparent lg:rounded-4xl lg:bg-linear-to-r"
+    >
+    </div>
+
+    <article class="z-1 flex max-w-[80ch] flex-col gap-2 p-10 lg:p-30">
+      <h2
+        class="text-fluid-2xl text-center text-balance text-white lg:text-left"
+      >
+        Cada donación cambia una historia.
+      </h2>
+      <p
+        class="text-fluid-base mb-6 max-w-prose text-center text-pretty text-white lg:text-left"
+      >
+        Tu apoyo se convierte en educación, alimentación, esperanza y
+        oportunidades para cientos de familias.
+      </p>
+      <a
+        href="/donar"
+        class={buttonVariants({
+          variant: "secondary",
+          size: "lg",
+          class: "w-fit mx-auto lg:mx-0",
+        })}
+      >
+        Quiero ayudar
+        <HeartIcon />
+      </a>
+    </article>
+  </div>
+</section>
