@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
   <div class="container flex w-full items-center justify-between">
     <a href="/" class="text-primary text-2xl font-bold">
       <LogoLarge height={80} width="100%" class="hidden lg:inline-flex" />
-      <LogoIsotype height={80} width="100%" class="lg:hidden" />
+      <LogoIsotype height={60} width="100%" class="lg:hidden" />
     </a>
 
     <nav class="flex items-center gap-2">
@@ -20,7 +20,7 @@ import { cn } from "@/lib/utils";
         class={cn(
           buttonVariants({
             variant: "ghost",
-            class: "text-lg hidden lg:inline-flex",
+            class: "md:text-lg hidden lg:inline-flex",
           }),
         )}
         href="#inicio">Inicio</a
@@ -29,7 +29,7 @@ import { cn } from "@/lib/utils";
         class={cn(
           buttonVariants({
             variant: "ghost",
-            class: "text-lg hidden lg:inline-flex",
+            class: "md:text-lg hidden lg:inline-flex",
           }),
         )}
         href="#nosotros">Nosotros</a
@@ -38,12 +38,12 @@ import { cn } from "@/lib/utils";
         class={cn(
           buttonVariants({
             variant: "ghost",
-            class: "text-lg hidden lg:inline-flex",
+            class: "md:text-lg hidden lg:inline-flex",
           }),
         )}
         href="#contacto">Contacto</a
       >
-      <a href="#" class={cn(buttonVariants({ class: "text-lg" }))}>
+      <a href="#" class={cn(buttonVariants({ class: "md:text-lg" }))}>
         Donar Ahora
         <HeartIcon />
       </a>
